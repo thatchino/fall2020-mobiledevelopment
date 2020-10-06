@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Example from './components/Example/index.js'
 
 function App() {
+  Example.call(name)
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +20,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> 
     </div>
   );
 }
+
 
 export default App;
