@@ -1,17 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Example} from './components/Example/index.js'
+import Example from './components/Example';
 
-function App() {
- class index{
-  Example(){
-  alert(name);
-  }
-}
-const Example = new index();
-
-  return (
+class App extends Component() {
+ render(){
+   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -27,9 +21,10 @@ const Example = new index();
           Learn React
         </a>
       </header> 
+      <Example />
     </div>
-  );
+    )
+  }
 }
-
 
 export default App;

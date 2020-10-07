@@ -1,7 +1,11 @@
-module.exports = {
+import React from 'react';
 
-   Example: function(){
-	var name = "<p>Hi, my name is Alex Nguyen.</p>";
-	return name;
-   }
-}
+const Example = () => {
+
+   return(
+	
+	<p>Hi, my name is Alex Nguyen.</p>
+   )
+};
+
+export default Example;
