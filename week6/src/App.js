@@ -1,10 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Example from './components/Example/index.js'
+import {Example} from './components/Example/index.js'
 
 function App() {
-  Example.call(name)
+ class index{
+  Example(){
+  alert(name);
+  }
+}
+const Example = new index();
+
   return (
     <div className="App">
       <header className="App-header">
