@@ -9,13 +9,7 @@ class App extends Component {
       this.state = {
         counter: 0
       };
-        this.state = this.initialState;
-          }
-            onResetClick(e) {
-            e.preventDefault();
-            this.setState(this.state);
-            }
-
+  }
 
 
   render() {
@@ -25,10 +19,10 @@ class App extends Component {
           <p>EXERCISE COUNTER</p>
           <p>Count: {this.state.counter}</p>
           <button onClick = {() => {this.setState({counter: this.state.counter + 1})}} > Increase! </button>
-          <button onClick = {() => {this.onResetClick({counter: 0})}} > Reset </button>
         </header>
       </div>
     );
   }
 }
+
 export default App;
