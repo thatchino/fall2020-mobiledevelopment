@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
-import './App.css';
+import React from 'react'
 
-class App extends Component {
-
+class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -10,8 +8,6 @@ class App extends Component {
         counter: 0
       };
   }
-
-
   render() {
     return (
       <div className = "App">
@@ -19,10 +15,10 @@ class App extends Component {
           <p>EXERCISE COUNTER</p>
           <p>Count: {this.state.counter}</p>
           <button onClick = {() => {this.setState({counter: this.state.counter + 1})}} > Increase! </button>
+          <button onClick = {() => {this.setState({counter: 0})}} > Reset </button>
         </header>
       </div>
-    );
+      )
   }
 }
-
 export default App;
