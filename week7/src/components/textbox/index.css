@@ -1,0 +1,13 @@
+.textBox {
+    height: 75px;
+    float: left;
+}
+
+.textBox p {
+    width: 200px;
+    float: left;
+}
+
+.textBox input {
+    margin-top: 40px;
+}
